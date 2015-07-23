@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'TelegramAppKit_Example', :exclusive => true do
+  pod "TelegramAppKit", :path => "../"
+end
+
+target 'TelegramAppKit_Tests', :exclusive => true do
+  pod "TelegramAppKit", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end

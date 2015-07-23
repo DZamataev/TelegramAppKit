@@ -1,0 +1,6 @@
+framework module TelegramAppKit {
+  umbrella header "Pods-TelegramAppKit_Example-TelegramAppKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

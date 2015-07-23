@@ -1,0 +1,6 @@
+framework module Pods_TelegramAppKit_Tests {
+  umbrella header "Pods-TelegramAppKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

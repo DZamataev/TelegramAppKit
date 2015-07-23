@@ -1,0 +1,1722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F09DA760B5270559FF6581 /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = A29DAAE9D7C5A4B60E65479A /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A1568026BEE7D11134C0D94 /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCB81C224967547491F46AB /* EXPMatchers+match.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BE6AC440A7F067D3BD3F486 /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 496BD633C7544FFE19F64514 /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D786D060BD30094F54D6374 /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2216C4B7CA5E86CEF742C9 /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10EF337CC224424A58803419 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4063B8D9D21E0B413CD57BC1 /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13949B9AE8584AF6D04A2775 /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E873C8A95FC20A12B6E27453 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1B198A54D69B7138E798A45E /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 431DE52FA666A17313EBBA3A /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BD931E2C588322E84717C4C /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9CB434A459FB9922C1E4C1 /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CF7DEEDF95115F3CC4D5B95 /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE0D695300F411A1D9F986 /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1E30DAA28FC609DE3A84B8B1 /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 294C61D2D5F7AE451E086D1C /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1FCB96B6C1289ECB06E52D18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBEA203467E0C5F26A8F8A /* Foundation.framework */; };
+		210AA589169F93B9455D6A7A /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3697D5E9C50392DF37AB3DBA /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2143AA3C0FFB74B72334AEDE /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A947955AEC4E37A3026C5BA9 /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		22468478893D509B81AC48EB /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C179A11D7F50B203297F6E99 /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28BCE71AF51224DDB05EBB41 /* Pods-TelegramAppKit_Example-TelegramAppKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0435E2360092EB27A92B94C /* Pods-TelegramAppKit_Example-TelegramAppKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		292FEA5DFDA06CB12C23986D /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 728D1C68022B3AB91417A036 /* XCTestCase+Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D6DF2E443B07A4320E77B41 /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F1675A5AA266954ECEAFD7 /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3066C8506BD0B8E9DE81AD6D /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 24BB50DD09CD914E7447029B /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32E704F81083B797E40F29EA /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAEC73103972EB96EA2180E /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		36A8AF33A4C87CD15051DCE1 /* Pods-TelegramAppKit_Tests-Expecta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE1EAD95011BFCB7F0D930F /* Pods-TelegramAppKit_Tests-Expecta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36F33A6A3253FFE39F61F88F /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 708B58715EF1322C38AB3CA6 /* SPTExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3843B92A70910CDD678635D2 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A82E37FA5D1C20145A3BCEE /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		38FF13A490EC8A64CC549BF8 /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = DAA21988751AE835ED44F648 /* SpectaUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B2203E5355607FE5523996B /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 07EC561ABDC0B5E97E36BCB5 /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B94C45EC072F0DD2396F636 /* TelegramAppKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C436761A7077C8497D55CBF2 /* TelegramAppKit.bundle */; };
+		3BF0809C9B83D1913141A5BD /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 2083FF76A3399085BECFAE2A /* SPTExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3DCF23EDBF503DAA0D863A60 /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = 021C044868FA0CF4FF506CA6 /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F7611A5BBDED88B57AB4360 /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 337D20B1AE51B1DDB88D8C2A /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FD6C98212177E53B8E44A07 /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 585A093F1B56FF9414A67543 /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42835855D9B65DF16725566F /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = 68941C736FB0923F1A47E8C4 /* SPTSharedExampleGroups.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		484BC971826CBB4D3BF2FF38 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B2358FAAD985E5E2452C4F /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4A9AB5880EACE2B0BFD08581 /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B4421217D4B759A9F174D6 /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B7070CAA2630F9BAE6F9838 /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = D2A6CBFF73A69D90B0B8631A /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D12804F0209F48291B300FF /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F60FE84DAEE74CA6D529B1 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4F50C7D5865253ED523C1A62 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3056C81AE124BA1B8A94CF /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4FB9F3D8B0532D05909B2821 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = AD471F46F685A82FA90E6639 /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		50FEEEB965866360B76CD204 /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = C98A443CB41D3786AC52299F /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		514DF86D96A096CCDB5EA353 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C704FB6603AFB89D62C83D4 /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		526D748D282688988A888E11 /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 283A1A590C2A9E7520702B2C /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5292E662FD79459640B4B7F6 /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A47BB0FB2653A49B2E63D54 /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54FAB5629D37053481FD487F /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 60008966AB6BE28945383D50 /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56EAC43DDE4D18EBBD407160 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BE8D313FC3339CFD05E6289 /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5754B8DD9A552C44FF11E25D /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6C7EECAE455D0AE6DEA8C8 /* ReplaceMe.m */; };
+		58238992A9E1981C1A191F2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBEA203467E0C5F26A8F8A /* Foundation.framework */; };
+		58DB31012ED01DFFC665629E /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317375563B840AA16504F50 /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5B7937DED3F6144B0A81C29D /* Pods-TelegramAppKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A52931BBC5990B32B923B7D /* Pods-TelegramAppKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B89782110771E517FED978F /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CFD53D9D088A03525B33CD /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		649DA1ACA9D03EC48DF02DB7 /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 44567350CD5B4BE04548AFB2 /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		64ED41D4CA0AA4C70EDC34A2 /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 80A0F3BA19B5F5DB6EA42D98 /* EXPMatchers+beginWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		662A7995661F6D6EC093B4A5 /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 83897BCEC6A378C1757E4525 /* SPTSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67845321B626FAF867B00837 /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 603AD572120428434E5C64A1 /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6786053EC612B776939522C6 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 837AC53BE9B14625239B96EC /* SpectaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		685EF8018C18515AA085C726 /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9D38B55002479C18ACA5B6 /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		68A64FBDD171B150DB2224F8 /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5902964B342703B74C79225D /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6AB2B6C4CD4721B45164CFF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBEA203467E0C5F26A8F8A /* Foundation.framework */; };
+		6DBF6ED202EA69EC9CD725BF /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 963435F3091BAF205D6B84A9 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		702DA9DF612C9DE793BEB254 /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = BA2167F039A2C3EEA40C7189 /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		720341597432B46BC85E2AE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBEA203467E0C5F26A8F8A /* Foundation.framework */; };
+		75C5403F8E0731A3261FD962 /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 3867286CB022119E94FE9B5D /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		75EFEEEE5ECEB3379D6FC847 /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EE1FECEF1C221BA5E6FB6B /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7D3130B8AD0DB530D1A20694 /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = B18D56EAB8E80B4220C7A871 /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7D8F49D2752FAEC36954C59E /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = C27ECB7BF308EF75748AA94C /* EXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81194975A414442209762C9F /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8929ADA5196156BBCDF8CB /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		822080A18919A3B727CCEE12 /* Pods-TelegramAppKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A3054F52A9B5FC8B70591 /* Pods-TelegramAppKit_Tests-dummy.m */; };
+		8681740A1EBA1225495C501A /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FD2DD7857E7F3597DED9C /* SpectaDSL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8708B29CB05624916D87BE99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBEA203467E0C5F26A8F8A /* Foundation.framework */; };
+		88199326B25DBFC4B22D9566 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF499F0CC00EC358D9BCD7F /* XCTest.framework */; };
+		88D80D55BF7FF6C47463B6E7 /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C95272F823FC8E0DA26B3DC /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CBF0B34EC7F7891360A1BC0 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE526A7DAE4633A8A3D7FD6 /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		90131ED03CE8D1AE096DD4B4 /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE5BCE69F0A45778C156F2F /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92119592EB0DFDFAA5C62431 /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = B8D016F8A3713E8ABC6720A8 /* EXPMatchers+beInstanceOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		921A669D2E50937AE98774EB /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6C7EECAE455D0AE6DEA8C8 /* ReplaceMe.m */; };
+		9575B84E431C8F9007D8B501 /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B8B3BBA1DBA5F16EA612A7 /* SPTTestSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9858188A67CF723A3D45E91E /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E89ED4DA15C6FAAC3246E05 /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C73CC5BE9158FA88F086974 /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = A56AC5B322447396F699A5C0 /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CF081F33BDA779F53F9045B /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = B12DF4296BEB3E18FE279A20 /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F75E9CC9D6F8AA13DCC3DDC /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E02020FD76E2843D81EA092 /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1520657EE19F7223A3CBD0C /* Pods-TelegramAppKit_Tests-TelegramAppKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C5F1B36222B24BCCE39942 /* Pods-TelegramAppKit_Tests-TelegramAppKit-dummy.m */; };
+		A376C7DD8D4A36D83FF5E848 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BFC93D1E65025B5C1CEDD0 /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A447E68F91E8E7BB8FFA4CE0 /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BDAB8054E6501B86D87FFD /* SPTCompiledExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A6ABBED2A82F24145F2BB94D /* Pods-TelegramAppKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E794F586BB847294218467B8 /* Pods-TelegramAppKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA95EAC902256A6C9B63E715 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBEA203467E0C5F26A8F8A /* Foundation.framework */; };
+		AB4026E97ACE69D640BCFE32 /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = D410AAF2A9BA37388B694285 /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ABEF136F437292173941F06E /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = F7271D3C3EAAF0110C98EF95 /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACAB62E2881762EC0EA6F0B1 /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = EE58DAE62D120A0D24C97FF2 /* SPTExampleGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ACDE2FD251A49A5925238401 /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 33B363342EED24C0CF7D76B1 /* EXPMatchers+beInTheRangeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1DEFE7272023045E7FC4D71 /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 59BD4BF8B31E041CCD3B8A0E /* SPTCompiledExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3F368D90BB35C3FEEF3691B /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = E29902DFC8A93AF35AFCD059 /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B4A22DF77E1C9B0C36FEDF5E /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 55FC875CB1F74758F4E23367 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B631A6C4BE9AEE2F740CAAE5 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE95A0EBE550682505DE00C4 /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8BD2355DD392DD4689F03DF /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = A246D7CFE74BB2130CA5D4DD /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8FCCEEB8B278AF90C97ECE6 /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D244D8DE2EDEA329E9723C2 /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B95648CFF6BCC5B986D176CB /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9C1ED7A554305F8CFAB861 /* SPTCallSite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BBC1BCD6E1F49D5CF7E6D610 /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ED7582E5BD70D04467983A /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C05DA21E46DD780AEA9EE69A /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1D4A9FB8B99A28D4562D96 /* XCTest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6BDA8F0D3379CA06C215224 /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEA2730AB1042D4B96247C7 /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC0DEE00323A776531617AD8 /* Pods-TelegramAppKit_Tests-Specta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C17F1A798340EBD8C6EAD7A /* Pods-TelegramAppKit_Tests-Specta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC42B4A569288615EFDD037B /* Pods-TelegramAppKit_Tests-Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C88D08096BF35BC220EDD8BB /* Pods-TelegramAppKit_Tests-Expecta-dummy.m */; };
+		CCAFFB011C38049124FD4C58 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACCEF611185DB6B19C7D5C1 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CEB6ABB0A7DF382CA348C112 /* TelegramAppKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0483A39DE4CA2FAE382C96B1 /* TelegramAppKit.bundle */; };
+		D07D57285E127943C5479B9B /* Pods-TelegramAppKit_Tests-Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2868F20BA1BBB8E0F3400EA5 /* Pods-TelegramAppKit_Tests-Specta-dummy.m */; };
+		D718BD690159BB4B727A74DE /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9C687BA685EFD8592A90EC /* SPTCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D71CC8F354CD6FDEF69D6709 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF499F0CC00EC358D9BCD7F /* XCTest.framework */; };
+		D7C4B5D873A4B05865802A53 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = A875DE2906604096545CE8A1 /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D902FDBE49D02B2C72128D2B /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B3682432802EA8448AE0F1 /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9D711A8F968B4A1371F820E /* Pods-TelegramAppKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA888F358C08656FF099BCAA /* Pods-TelegramAppKit_Example-dummy.m */; };
+		DE3941C5A7C16DA7A4DBB3C8 /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = F021C14D179F9235315FF001 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DF745890C64E5AC32674DA1A /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6EBDECD4959DCCB2E43287 /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E1B500D1D433A4D948BADD2B /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = EC59C0C35E73B6287B0BD4A1 /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E35BA2DC5E5DABF7BA4EF851 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 5237BD3DC19D9960E07130BE /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EA506B4CD716DEB4555FBAD6 /* Pods-TelegramAppKit_Tests-TelegramAppKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DCFA442A60055EB771E5B82 /* Pods-TelegramAppKit_Tests-TelegramAppKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE5164BEEA95587E03EA9997 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E23FCDAF3F13E7B7F65FA59 /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF0EA6D0ACB2FCFF9F182DA3 /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = AEACFB61EAD5C5120AC49F99 /* SPTGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F162B9F3A9B0C995234FE901 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BF69B536576BBBD7FDCEDE /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F349F08B05684133347C8F94 /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D102C94F73CF73229B4E3F /* Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8652B317FCC15D28D3E7460 /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 142C480799F7214C6E91F878 /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F93BE954585685F93D342BE3 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B88C7887D319C50C87C88 /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FBF91806431F2F90608C4F64 /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FC33DA081E22913EE2A44 /* XCTestCase+Specta.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FD958B8D48255B5039434A54 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E635E6D726F9902456AE4E4 /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDF0E70DD186373E769A5B6C /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 37939A8899E58DB83FEDFC1A /* SPTTestSuite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FE127ECAA153CF5536B22CCC /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B2FEDB28AA0C572CBB5740 /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FF99F03FA207006BD5D61799 /* Pods-TelegramAppKit_Example-TelegramAppKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A77755265CADCB40614C74 /* Pods-TelegramAppKit_Example-TelegramAppKit-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		078384729D71BEA642D021B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818A1116AAF8EA134150BA3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8667E1279E0025E443F44EB3;
+			remoteInfo = "Pods-TelegramAppKit_Example-TelegramAppKit-TelegramAppKit";
+		};
+		0F574A398035A2A81A94286F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818A1116AAF8EA134150BA3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4218A4AC011C14771ECC5B1;
+			remoteInfo = "Pods-TelegramAppKit_Tests-Expecta";
+		};
+		6B477C68AEE5244E6B0BC774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818A1116AAF8EA134150BA3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA81242A8958413D8390F0E3;
+			remoteInfo = "Pods-TelegramAppKit_Example-TelegramAppKit";
+		};
+		889B9A4BF66443E9F67C1C1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818A1116AAF8EA134150BA3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C093349D72FA0B3B1E0F7F;
+			remoteInfo = "Pods-TelegramAppKit_Tests-Specta";
+		};
+		C5E0C1E774E76870870711B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818A1116AAF8EA134150BA3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 201E3EED877AB5FD91F49E70;
+			remoteInfo = "Pods-TelegramAppKit_Tests-TelegramAppKit-TelegramAppKit";
+		};
+		D84B2FE7A743385892028AC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818A1116AAF8EA134150BA3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 731F5C1A874486EAB34BE128;
+			remoteInfo = "Pods-TelegramAppKit_Tests-TelegramAppKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021C044868FA0CF4FF506CA6 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		0483A39DE4CA2FAE382C96B1 /* TelegramAppKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramAppKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EC561ABDC0B5E97E36BCB5 /* SPTExcludeGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExcludeGlobalBeforeAfterEach.h; path = Specta/Specta/SPTExcludeGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		09EBE6C379E2011AE4E1EAE9 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A47BB0FB2653A49B2E63D54 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		0A56668A9060EAE15C79CA63 /* Pods-TelegramAppKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TelegramAppKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0ACCEF611185DB6B19C7D5C1 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		0BE8D313FC3339CFD05E6289 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		0D61AEE5211223500389DBCE /* Pods-TelegramAppKit_Tests-Specta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelegramAppKit_Tests-Specta-Private.xcconfig"; sourceTree = "<group>"; };
+		0FAEC73103972EB96EA2180E /* EXPMatchers+match.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+match.m"; path = "Expecta/Matchers/EXPMatchers+match.m"; sourceTree = "<group>"; };
+		142C480799F7214C6E91F878 /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		147EADB2BC496CCA4F4F1665 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B2358FAAD985E5E2452C4F /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
+		18D32F043B1DD733B80CD988 /* Pods-TelegramAppKit_Tests-Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelegramAppKit_Tests-Expecta.xcconfig"; sourceTree = "<group>"; };
+		1B8929ADA5196156BBCDF8CB /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
+		1CE526A7DAE4633A8A3D7FD6 /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
+		1D9D38B55002479C18ACA5B6 /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
+		1F2216C4B7CA5E86CEF742C9 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		203D9947AF9E51241FEFAB86 /* Pods-TelegramAppKit_Tests-Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelegramAppKit_Tests-Specta-prefix.pch"; sourceTree = "<group>"; };
+		2083FF76A3399085BECFAE2A /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
+		20B3682432802EA8448AE0F1 /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		21356584009A1B6E2BDF1BF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		243C80570900AD02DC36A7F4 /* Pods-TelegramAppKit_Tests-TelegramAppKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-TelegramAppKit_Tests-TelegramAppKit-prefix.pch"; path = "../Pods-TelegramAppKit_Tests-TelegramAppKit/Pods-TelegramAppKit_Tests-TelegramAppKit-prefix.pch"; sourceTree = "<group>"; };
+		24BB50DD09CD914E7447029B /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
+		27EE1FECEF1C221BA5E6FB6B /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
+		283A1A590C2A9E7520702B2C /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		2868F20BA1BBB8E0F3400EA5 /* Pods-TelegramAppKit_Tests-Specta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TelegramAppKit_Tests-Specta-dummy.m"; sourceTree = "<group>"; };
+		294C61D2D5F7AE451E086D1C /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
+		2963AA0B3E8C48235D577818 /* Pods-TelegramAppKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TelegramAppKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		2A82E37FA5D1C20145A3BCEE /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
+		2B0FC33DA081E22913EE2A44 /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
+		337D20B1AE51B1DDB88D8C2A /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
+		33B363342EED24C0CF7D76B1 /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		3697D5E9C50392DF37AB3DBA /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		37939A8899E58DB83FEDFC1A /* SPTTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTTestSuite.m; path = Specta/Specta/SPTTestSuite.m; sourceTree = "<group>"; };
+		3867286CB022119E94FE9B5D /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
+		38A77755265CADCB40614C74 /* Pods-TelegramAppKit_Example-TelegramAppKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TelegramAppKit_Example-TelegramAppKit-dummy.m"; sourceTree = "<group>"; };
+		3C704FB6603AFB89D62C83D4 /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
+		3D45D2F317CCF36978C7DBBA /* Pods-TelegramAppKit_Tests-Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TelegramAppKit_Tests-Specta.modulemap"; sourceTree = "<group>"; };
+		3E2A3054F52A9B5FC8B70591 /* Pods-TelegramAppKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TelegramAppKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		4063B8D9D21E0B413CD57BC1 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		4317375563B840AA16504F50 /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
+		431DE52FA666A17313EBBA3A /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		44567350CD5B4BE04548AFB2 /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
+		476C477AE78A2548F25791E9 /* Pods-TelegramAppKit_Tests-Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelegramAppKit_Tests-Specta.xcconfig"; sourceTree = "<group>"; };
+		48D102C94F73CF73229B4E3F /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
+		496BD633C7544FFE19F64514 /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
+		4E89ED4DA15C6FAAC3246E05 /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
+		4E9CB434A459FB9922C1E4C1 /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
+		5237BD3DC19D9960E07130BE /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
+		53473844E30B7C1D50E7D41E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-TelegramAppKit_Tests-TelegramAppKit/Info.plist"; sourceTree = "<group>"; };
+		55FC875CB1F74758F4E23367 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		585A093F1B56FF9414A67543 /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
+		588B88C7887D319C50C87C88 /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
+		5902964B342703B74C79225D /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
+		59BD4BF8B31E041CCD3B8A0E /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
+		59C5F1B36222B24BCCE39942 /* Pods-TelegramAppKit_Tests-TelegramAppKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-TelegramAppKit_Tests-TelegramAppKit-dummy.m"; path = "../Pods-TelegramAppKit_Tests-TelegramAppKit/Pods-TelegramAppKit_Tests-TelegramAppKit-dummy.m"; sourceTree = "<group>"; };
+		5E02020FD76E2843D81EA092 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		5E5FD2DD7857E7F3597DED9C /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
+		60008966AB6BE28945383D50 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		603AD572120428434E5C64A1 /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
+		65E827DD3E0CB53313FFDA68 /* Pods-TelegramAppKit_Tests-TelegramAppKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-TelegramAppKit_Tests-TelegramAppKit.modulemap"; path = "../Pods-TelegramAppKit_Tests-TelegramAppKit/Pods-TelegramAppKit_Tests-TelegramAppKit.modulemap"; sourceTree = "<group>"; };
+		6874691692ACAE7FBEA95C16 /* Pods-TelegramAppKit_Example-TelegramAppKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelegramAppKit_Example-TelegramAppKit.xcconfig"; sourceTree = "<group>"; };
+		68941C736FB0923F1A47E8C4 /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
+		69A0D32BF1D0576E2D94F78C /* Pods-TelegramAppKit_Tests-TelegramAppKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelegramAppKit_Tests-TelegramAppKit.xcconfig"; path = "../Pods-TelegramAppKit_Tests-TelegramAppKit/Pods-TelegramAppKit_Tests-TelegramAppKit.xcconfig"; sourceTree = "<group>"; };
+		6C95272F823FC8E0DA26B3DC /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		6DCFA442A60055EB771E5B82 /* Pods-TelegramAppKit_Tests-TelegramAppKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-TelegramAppKit_Tests-TelegramAppKit-umbrella.h"; path = "../Pods-TelegramAppKit_Tests-TelegramAppKit/Pods-TelegramAppKit_Tests-TelegramAppKit-umbrella.h"; sourceTree = "<group>"; };
+		708B58715EF1322C38AB3CA6 /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
+		728D1C68022B3AB91417A036 /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
+		79CF306982A455ECE6AA2DCE /* Pods-TelegramAppKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TelegramAppKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		79F6F92AC12E1955EB84D81E /* Pods-TelegramAppKit_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelegramAppKit_Tests-environment.h"; sourceTree = "<group>"; };
+		7C3056C81AE124BA1B8A94CF /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
+		7E23FCDAF3F13E7B7F65FA59 /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
+		80A0F3BA19B5F5DB6EA42D98 /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
+		80C2AC40F4081751C353092A /* TelegramAppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TelegramAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		828AA978D3ED9E42D88EA1FB /* Pods-TelegramAppKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelegramAppKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		837AC53BE9B14625239B96EC /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
+		83897BCEC6A378C1757E4525 /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = Specta/Specta/SPTSpec.h; sourceTree = "<group>"; };
+		84E8A0ACB8BD0A3D2B187A95 /* Pods-TelegramAppKit_Example-TelegramAppKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelegramAppKit_Example-TelegramAppKit-Private.xcconfig"; sourceTree = "<group>"; };
+		86CFD53D9D088A03525B33CD /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
+		87A2D3CA0AF7E999167879FB /* Pods-TelegramAppKit_Tests-Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TelegramAppKit_Tests-Expecta.modulemap"; sourceTree = "<group>"; };
+		8A52931BBC5990B32B923B7D /* Pods-TelegramAppKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelegramAppKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		8BA31F6B263A0A486E6F49A7 /* Pods-TelegramAppKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TelegramAppKit_Example-resources.sh"; sourceTree = "<group>"; };
+		8C17F1A798340EBD8C6EAD7A /* Pods-TelegramAppKit_Tests-Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelegramAppKit_Tests-Specta-umbrella.h"; sourceTree = "<group>"; };
+		8C334B092CA53254B9911D33 /* Pods-TelegramAppKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelegramAppKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8D244D8DE2EDEA329E9723C2 /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
+		8DBEA99D17D54BCF23B5C8FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DF499F0CC00EC358D9BCD7F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8E635E6D726F9902456AE4E4 /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		963435F3091BAF205D6B84A9 /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		96A82EB1E80B4CC6D6439DF3 /* Pods-TelegramAppKit_Tests-TelegramAppKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelegramAppKit_Tests-TelegramAppKit-Private.xcconfig"; path = "../Pods-TelegramAppKit_Tests-TelegramAppKit/Pods-TelegramAppKit_Tests-TelegramAppKit-Private.xcconfig"; sourceTree = "<group>"; };
+		97BDAB8054E6501B86D87FFD /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
+		982327E564371B6581F0907A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A5ACC8674EBC99ACCFAFFC5 /* Pods-TelegramAppKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TelegramAppKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9C9C1ED7A554305F8CFAB861 /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
+		9D1D4A9FB8B99A28D4562D96 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
+		A0435E2360092EB27A92B94C /* Pods-TelegramAppKit_Example-TelegramAppKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelegramAppKit_Example-TelegramAppKit-umbrella.h"; sourceTree = "<group>"; };
+		A191817FC8C0DB489396C252 /* Pods-TelegramAppKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TelegramAppKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A246D7CFE74BB2130CA5D4DD /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
+		A29DAAE9D7C5A4B60E65479A /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
+		A3F1675A5AA266954ECEAFD7 /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		A472F1B9694F167BA2DAA584 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A56AC5B322447396F699A5C0 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
+		A7ED7582E5BD70D04467983A /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
+		A875DE2906604096545CE8A1 /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
+		A947955AEC4E37A3026C5BA9 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
+		A94CD794BB807662623CD80D /* Pods-TelegramAppKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TelegramAppKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA6EBDECD4959DCCB2E43287 /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
+		AC2D53F46E934FA460F1BDB7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDF7A3C3069E676EAEEC01A /* Pods_TelegramAppKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelegramAppKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD471F46F685A82FA90E6639 /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
+		AD75B9D5DA809AA91435F807 /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEACFB61EAD5C5120AC49F99 /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		B0BF69B536576BBBD7FDCEDE /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
+		B12DF4296BEB3E18FE279A20 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		B18D56EAB8E80B4220C7A871 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
+		B2F60FE84DAEE74CA6D529B1 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
+		B5830EACF1710394C8CC2FC8 /* Pods-TelegramAppKit_Example-TelegramAppKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TelegramAppKit_Example-TelegramAppKit.modulemap"; sourceTree = "<group>"; };
+		B8D016F8A3713E8ABC6720A8 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		BA2167F039A2C3EEA40C7189 /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
+		BC78D5EACC8843B0E8F1DDF1 /* Pods-TelegramAppKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelegramAppKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEF9DAEE1B0582625BA58546 /* Pods-TelegramAppKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TelegramAppKit_Example.modulemap"; sourceTree = "<group>"; };
+		BF9C687BA685EFD8592A90EC /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
+		BFCB81C224967547491F46AB /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
+		C179A11D7F50B203297F6E99 /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
+		C1A5DD941E07DA9C5D576316 /* Pods-TelegramAppKit_Tests-Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelegramAppKit_Tests-Expecta-prefix.pch"; sourceTree = "<group>"; };
+		C27ECB7BF308EF75748AA94C /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
+		C436761A7077C8497D55CBF2 /* TelegramAppKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramAppKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88D08096BF35BC220EDD8BB /* Pods-TelegramAppKit_Tests-Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TelegramAppKit_Tests-Expecta-dummy.m"; sourceTree = "<group>"; };
+		C8B2FEDB28AA0C572CBB5740 /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
+		C8EE0D695300F411A1D9F986 /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
+		C98A443CB41D3786AC52299F /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		CAE1EAD95011BFCB7F0D930F /* Pods-TelegramAppKit_Tests-Expecta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelegramAppKit_Tests-Expecta-umbrella.h"; sourceTree = "<group>"; };
+		CE95A0EBE550682505DE00C4 /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
+		D1B8B3BBA1DBA5F16EA612A7 /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
+		D2A6CBFF73A69D90B0B8631A /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
+		D410AAF2A9BA37388B694285 /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
+		D9DBEA203467E0C5F26A8F8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DAA21988751AE835ED44F648 /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
+		DCEA2730AB1042D4B96247C7 /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
+		DDEA36A275F8EB05516A35D7 /* Pods-TelegramAppKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TelegramAppKit_Tests.modulemap"; sourceTree = "<group>"; };
+		E29902DFC8A93AF35AFCD059 /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
+		E374F73FAAF577593CD7B3D5 /* Pods-TelegramAppKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TelegramAppKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E794F586BB847294218467B8 /* Pods-TelegramAppKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelegramAppKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E873C8A95FC20A12B6E27453 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
+		E8BFC93D1E65025B5C1CEDD0 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		EB6C7EECAE455D0AE6DEA8C8 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		EC59C0C35E73B6287B0BD4A1 /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		EC753D54AF3E2ED07596F2D8 /* Pods-TelegramAppKit_Tests-Expecta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelegramAppKit_Tests-Expecta-Private.xcconfig"; sourceTree = "<group>"; };
+		EDC580D74C2B687A475DA49C /* Pods-TelegramAppKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelegramAppKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EE58DAE62D120A0D24C97FF2 /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
+		EE899D62E44EF082A0DE6763 /* TelegramAppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TelegramAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F021C14D179F9235315FF001 /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
+		F1B4421217D4B759A9F174D6 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		F7271D3C3EAAF0110C98EF95 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
+		F90410F3941F8160811E1EED /* Pods-TelegramAppKit_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelegramAppKit_Example-environment.h"; sourceTree = "<group>"; };
+		FA3258237173602623F487E8 /* Pods_TelegramAppKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelegramAppKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA888F358C08656FF099BCAA /* Pods-TelegramAppKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TelegramAppKit_Example-dummy.m"; sourceTree = "<group>"; };
+		FAF160D61E18BD4FE05D65D6 /* Pods-TelegramAppKit_Example-TelegramAppKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelegramAppKit_Example-TelegramAppKit-prefix.pch"; sourceTree = "<group>"; };
+		FCE5BCE69F0A45778C156F2F /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		293B6B7F82DE9ECE2E03474B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6060D164845813D12A16988C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8142C93C72501F441FFA2E5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8708B29CB05624916D87BE99 /* Foundation.framework in Frameworks */,
+				D71CC8F354CD6FDEF69D6709 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96AEF3C212CB76289D048141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58238992A9E1981C1A191F2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54A964FCA057F5B015DF22F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCB96B6C1289ECB06E52D18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF19BF76C16B3497DB601BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720341597432B46BC85E2AE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E173FDBC2AEA76EB2341AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB2B6C4CD4721B45164CFF2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F252C8F851D222ED42F895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA95EAC902256A6C9B63E715 /* Foundation.framework in Frameworks */,
+				88199326B25DBFC4B22D9566 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03DF5810800F12962F46D352 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				982327E564371B6581F0907A /* Info.plist */,
+				53473844E30B7C1D50E7D41E /* Info.plist */,
+				B5830EACF1710394C8CC2FC8 /* Pods-TelegramAppKit_Example-TelegramAppKit.modulemap */,
+				6874691692ACAE7FBEA95C16 /* Pods-TelegramAppKit_Example-TelegramAppKit.xcconfig */,
+				84E8A0ACB8BD0A3D2B187A95 /* Pods-TelegramAppKit_Example-TelegramAppKit-Private.xcconfig */,
+				38A77755265CADCB40614C74 /* Pods-TelegramAppKit_Example-TelegramAppKit-dummy.m */,
+				FAF160D61E18BD4FE05D65D6 /* Pods-TelegramAppKit_Example-TelegramAppKit-prefix.pch */,
+				A0435E2360092EB27A92B94C /* Pods-TelegramAppKit_Example-TelegramAppKit-umbrella.h */,
+				65E827DD3E0CB53313FFDA68 /* Pods-TelegramAppKit_Tests-TelegramAppKit.modulemap */,
+				69A0D32BF1D0576E2D94F78C /* Pods-TelegramAppKit_Tests-TelegramAppKit.xcconfig */,
+				96A82EB1E80B4CC6D6439DF3 /* Pods-TelegramAppKit_Tests-TelegramAppKit-Private.xcconfig */,
+				59C5F1B36222B24BCCE39942 /* Pods-TelegramAppKit_Tests-TelegramAppKit-dummy.m */,
+				243C80570900AD02DC36A7F4 /* Pods-TelegramAppKit_Tests-TelegramAppKit-prefix.pch */,
+				6DCFA442A60055EB771E5B82 /* Pods-TelegramAppKit_Tests-TelegramAppKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-TelegramAppKit_Example-TelegramAppKit";
+			sourceTree = "<group>";
+		};
+		0BC93EC70A59F69220DF736B /* Pods-TelegramAppKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				147EADB2BC496CCA4F4F1665 /* Info.plist */,
+				BEF9DAEE1B0582625BA58546 /* Pods-TelegramAppKit_Example.modulemap */,
+				A191817FC8C0DB489396C252 /* Pods-TelegramAppKit_Example-acknowledgements.markdown */,
+				79CF306982A455ECE6AA2DCE /* Pods-TelegramAppKit_Example-acknowledgements.plist */,
+				FA888F358C08656FF099BCAA /* Pods-TelegramAppKit_Example-dummy.m */,
+				F90410F3941F8160811E1EED /* Pods-TelegramAppKit_Example-environment.h */,
+				0A56668A9060EAE15C79CA63 /* Pods-TelegramAppKit_Example-frameworks.sh */,
+				8BA31F6B263A0A486E6F49A7 /* Pods-TelegramAppKit_Example-resources.sh */,
+				8A52931BBC5990B32B923B7D /* Pods-TelegramAppKit_Example-umbrella.h */,
+				828AA978D3ED9E42D88EA1FB /* Pods-TelegramAppKit_Example.debug.xcconfig */,
+				8C334B092CA53254B9911D33 /* Pods-TelegramAppKit_Example.release.xcconfig */,
+			);
+			name = "Pods-TelegramAppKit_Example";
+			path = "Target Support Files/Pods-TelegramAppKit_Example";
+			sourceTree = "<group>";
+		};
+		112F46D05BDAEB3D91662446 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A897293705C48B15B789812 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2472C2FDD3349594CD177754 /* Specta */ = {
+			isa = PBXGroup;
+			children = (
+				BF9C687BA685EFD8592A90EC /* SPTCallSite.h */,
+				9C9C1ED7A554305F8CFAB861 /* SPTCallSite.m */,
+				59BD4BF8B31E041CCD3B8A0E /* SPTCompiledExample.h */,
+				97BDAB8054E6501B86D87FFD /* SPTCompiledExample.m */,
+				708B58715EF1322C38AB3CA6 /* SPTExample.h */,
+				2083FF76A3399085BECFAE2A /* SPTExample.m */,
+				24BB50DD09CD914E7447029B /* SPTExampleGroup.h */,
+				EE58DAE62D120A0D24C97FF2 /* SPTExampleGroup.m */,
+				07EC561ABDC0B5E97E36BCB5 /* SPTExcludeGlobalBeforeAfterEach.h */,
+				AEACFB61EAD5C5120AC49F99 /* SPTGlobalBeforeAfterEach.h */,
+				A56AC5B322447396F699A5C0 /* SPTSharedExampleGroups.h */,
+				68941C736FB0923F1A47E8C4 /* SPTSharedExampleGroups.m */,
+				83897BCEC6A378C1757E4525 /* SPTSpec.h */,
+				44567350CD5B4BE04548AFB2 /* SPTSpec.m */,
+				D1B8B3BBA1DBA5F16EA612A7 /* SPTTestSuite.h */,
+				37939A8899E58DB83FEDFC1A /* SPTTestSuite.m */,
+				4E9CB434A459FB9922C1E4C1 /* Specta.h */,
+				337D20B1AE51B1DDB88D8C2A /* SpectaDSL.h */,
+				5E5FD2DD7857E7F3597DED9C /* SpectaDSL.m */,
+				837AC53BE9B14625239B96EC /* SpectaTypes.h */,
+				DAA21988751AE835ED44F648 /* SpectaUtility.h */,
+				AA6EBDECD4959DCCB2E43287 /* SpectaUtility.m */,
+				9D1D4A9FB8B99A28D4562D96 /* XCTest+Private.h */,
+				728D1C68022B3AB91417A036 /* XCTestCase+Specta.h */,
+				2B0FC33DA081E22913EE2A44 /* XCTestCase+Specta.m */,
+				F8BE428A0B954F4515AABCEA /* Support Files */,
+			);
+			path = Specta;
+			sourceTree = "<group>";
+		};
+		2C902FA8AB53D52B51A73B03 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D6B96A676CCF82A9D418D529 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		4A897293705C48B15B789812 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D9DBEA203467E0C5F26A8F8A /* Foundation.framework */,
+				8DF499F0CC00EC358D9BCD7F /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		61A3F80C5B0510E1BAD0468B /* Pods-TelegramAppKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				21356584009A1B6E2BDF1BF6 /* Info.plist */,
+				DDEA36A275F8EB05516A35D7 /* Pods-TelegramAppKit_Tests.modulemap */,
+				E374F73FAAF577593CD7B3D5 /* Pods-TelegramAppKit_Tests-acknowledgements.markdown */,
+				A94CD794BB807662623CD80D /* Pods-TelegramAppKit_Tests-acknowledgements.plist */,
+				3E2A3054F52A9B5FC8B70591 /* Pods-TelegramAppKit_Tests-dummy.m */,
+				79F6F92AC12E1955EB84D81E /* Pods-TelegramAppKit_Tests-environment.h */,
+				9A5ACC8674EBC99ACCFAFFC5 /* Pods-TelegramAppKit_Tests-frameworks.sh */,
+				2963AA0B3E8C48235D577818 /* Pods-TelegramAppKit_Tests-resources.sh */,
+				E794F586BB847294218467B8 /* Pods-TelegramAppKit_Tests-umbrella.h */,
+				BC78D5EACC8843B0E8F1DDF1 /* Pods-TelegramAppKit_Tests.debug.xcconfig */,
+				EDC580D74C2B687A475DA49C /* Pods-TelegramAppKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-TelegramAppKit_Tests";
+			path = "Target Support Files/Pods-TelegramAppKit_Tests";
+			sourceTree = "<group>";
+		};
+		681DECE904D6D26C456FD3D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A9C3183C6EC735E4E5F16 /* Expecta */,
+				2472C2FDD3349594CD177754 /* Specta */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F190E951AEDCB43EFDC5877 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC2D53F46E934FA460F1BDB7 /* Info.plist */,
+				87A2D3CA0AF7E999167879FB /* Pods-TelegramAppKit_Tests-Expecta.modulemap */,
+				18D32F043B1DD733B80CD988 /* Pods-TelegramAppKit_Tests-Expecta.xcconfig */,
+				EC753D54AF3E2ED07596F2D8 /* Pods-TelegramAppKit_Tests-Expecta-Private.xcconfig */,
+				C88D08096BF35BC220EDD8BB /* Pods-TelegramAppKit_Tests-Expecta-dummy.m */,
+				C1A5DD941E07DA9C5D576316 /* Pods-TelegramAppKit_Tests-Expecta-prefix.pch */,
+				CAE1EAD95011BFCB7F0D930F /* Pods-TelegramAppKit_Tests-Expecta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-TelegramAppKit_Tests-Expecta";
+			sourceTree = "<group>";
+		};
+		9E81F77FD1A53050F1C1A1D7 /* TelegramAppKit */ = {
+			isa = PBXGroup;
+			children = (
+				2C902FA8AB53D52B51A73B03 /* Pod */,
+				03DF5810800F12962F46D352 /* Support Files */,
+			);
+			name = TelegramAppKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A10F80E3A2B22D462763FA0F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E81F77FD1A53050F1C1A1D7 /* TelegramAppKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF7A9C3183C6EC735E4E5F16 /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				0A47BB0FB2653A49B2E63D54 /* EXPBlockDefinedMatcher.h */,
+				A947955AEC4E37A3026C5BA9 /* EXPBlockDefinedMatcher.m */,
+				C27ECB7BF308EF75748AA94C /* EXPDefines.h */,
+				BA2167F039A2C3EEA40C7189 /* EXPDoubleTuple.h */,
+				AD471F46F685A82FA90E6639 /* EXPDoubleTuple.m */,
+				F7271D3C3EAAF0110C98EF95 /* EXPExpect.h */,
+				17B2358FAAD985E5E2452C4F /* EXPExpect.m */,
+				FCE5BCE69F0A45778C156F2F /* EXPFloatTuple.h */,
+				B0BF69B536576BBBD7FDCEDE /* EXPFloatTuple.m */,
+				C179A11D7F50B203297F6E99 /* EXPMatcher.h */,
+				EC59C0C35E73B6287B0BD4A1 /* EXPMatcherHelpers.h */,
+				B2F60FE84DAEE74CA6D529B1 /* EXPMatcherHelpers.m */,
+				A29DAAE9D7C5A4B60E65479A /* EXPMatchers.h */,
+				55FC875CB1F74758F4E23367 /* EXPMatchers+beCloseTo.h */,
+				1D9D38B55002479C18ACA5B6 /* EXPMatchers+beCloseTo.m */,
+				021C044868FA0CF4FF506CA6 /* EXPMatchers+beFalsy.h */,
+				B18D56EAB8E80B4220C7A871 /* EXPMatchers+beFalsy.m */,
+				4063B8D9D21E0B413CD57BC1 /* EXPMatchers+beGreaterThan.h */,
+				2A82E37FA5D1C20145A3BCEE /* EXPMatchers+beGreaterThan.m */,
+				E8BFC93D1E65025B5C1CEDD0 /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				4317375563B840AA16504F50 /* EXPMatchers+beGreaterThanOrEqualTo.m */,
+				0BE8D313FC3339CFD05E6289 /* EXPMatchers+beIdenticalTo.h */,
+				CE95A0EBE550682505DE00C4 /* EXPMatchers+beIdenticalTo.m */,
+				33B363342EED24C0CF7D76B1 /* EXPMatchers+beInTheRangeOf.h */,
+				603AD572120428434E5C64A1 /* EXPMatchers+beInTheRangeOf.m */,
+				B8D016F8A3713E8ABC6720A8 /* EXPMatchers+beInstanceOf.h */,
+				C8EE0D695300F411A1D9F986 /* EXPMatchers+beInstanceOf.m */,
+				8E635E6D726F9902456AE4E4 /* EXPMatchers+beKindOf.h */,
+				0ACCEF611185DB6B19C7D5C1 /* EXPMatchers+beKindOf.m */,
+				60008966AB6BE28945383D50 /* EXPMatchers+beLessThan.h */,
+				588B88C7887D319C50C87C88 /* EXPMatchers+beLessThan.m */,
+				B12DF4296BEB3E18FE279A20 /* EXPMatchers+beLessThanOrEqualTo.h */,
+				A246D7CFE74BB2130CA5D4DD /* EXPMatchers+beLessThanOrEqualTo.m */,
+				A3F1675A5AA266954ECEAFD7 /* EXPMatchers+beNil.h */,
+				F021C14D179F9235315FF001 /* EXPMatchers+beNil.m */,
+				20B3682432802EA8448AE0F1 /* EXPMatchers+beSubclassOf.h */,
+				A7ED7582E5BD70D04467983A /* EXPMatchers+beSubclassOf.m */,
+				C98A443CB41D3786AC52299F /* EXPMatchers+beSupersetOf.h */,
+				1CE526A7DAE4633A8A3D7FD6 /* EXPMatchers+beSupersetOf.m */,
+				F1B4421217D4B759A9F174D6 /* EXPMatchers+beTruthy.h */,
+				7C3056C81AE124BA1B8A94CF /* EXPMatchers+beTruthy.m */,
+				80A0F3BA19B5F5DB6EA42D98 /* EXPMatchers+beginWith.h */,
+				D410AAF2A9BA37388B694285 /* EXPMatchers+beginWith.m */,
+				963435F3091BAF205D6B84A9 /* EXPMatchers+conformTo.h */,
+				C8B2FEDB28AA0C572CBB5740 /* EXPMatchers+conformTo.m */,
+				1F2216C4B7CA5E86CEF742C9 /* EXPMatchers+contain.h */,
+				294C61D2D5F7AE451E086D1C /* EXPMatchers+contain.m */,
+				1B8929ADA5196156BBCDF8CB /* EXPMatchers+endWith.h */,
+				3867286CB022119E94FE9B5D /* EXPMatchers+endWith.m */,
+				283A1A590C2A9E7520702B2C /* EXPMatchers+equal.h */,
+				8D244D8DE2EDEA329E9723C2 /* EXPMatchers+equal.m */,
+				431DE52FA666A17313EBBA3A /* EXPMatchers+haveCountOf.h */,
+				5237BD3DC19D9960E07130BE /* EXPMatchers+haveCountOf.m */,
+				BFCB81C224967547491F46AB /* EXPMatchers+match.h */,
+				0FAEC73103972EB96EA2180E /* EXPMatchers+match.m */,
+				142C480799F7214C6E91F878 /* EXPMatchers+postNotification.h */,
+				27EE1FECEF1C221BA5E6FB6B /* EXPMatchers+postNotification.m */,
+				6C95272F823FC8E0DA26B3DC /* EXPMatchers+raise.h */,
+				3C704FB6603AFB89D62C83D4 /* EXPMatchers+raise.m */,
+				5E02020FD76E2843D81EA092 /* EXPMatchers+raiseWithReason.h */,
+				E29902DFC8A93AF35AFCD059 /* EXPMatchers+raiseWithReason.m */,
+				7E23FCDAF3F13E7B7F65FA59 /* EXPMatchers+respondTo.h */,
+				86CFD53D9D088A03525B33CD /* EXPMatchers+respondTo.m */,
+				3697D5E9C50392DF37AB3DBA /* EXPUnsupportedObject.h */,
+				E873C8A95FC20A12B6E27453 /* EXPUnsupportedObject.m */,
+				48D102C94F73CF73229B4E3F /* Expecta.h */,
+				585A093F1B56FF9414A67543 /* ExpectaObject.h */,
+				DCEA2730AB1042D4B96247C7 /* ExpectaObject.m */,
+				4E89ED4DA15C6FAAC3246E05 /* ExpectaSupport.h */,
+				5902964B342703B74C79225D /* ExpectaSupport.m */,
+				496BD633C7544FFE19F64514 /* NSObject+Expecta.h */,
+				D2A6CBFF73A69D90B0B8631A /* NSValue+Expecta.h */,
+				A875DE2906604096545CE8A1 /* NSValue+Expecta.m */,
+				8F190E951AEDCB43EFDC5877 /* Support Files */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		D6B96A676CCF82A9D418D529 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EB6C7EECAE455D0AE6DEA8C8 /* ReplaceMe.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E6BC6D74B7B4632627F62291 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09EBE6C379E2011AE4E1EAE9 /* Expecta.framework */,
+				ACDF7A3C3069E676EAEEC01A /* Pods_TelegramAppKit_Example.framework */,
+				FA3258237173602623F487E8 /* Pods_TelegramAppKit_Tests.framework */,
+				AD75B9D5DA809AA91435F807 /* Specta.framework */,
+				0483A39DE4CA2FAE382C96B1 /* TelegramAppKit.bundle */,
+				C436761A7077C8497D55CBF2 /* TelegramAppKit.bundle */,
+				80C2AC40F4081751C353092A /* TelegramAppKit.framework */,
+				EE899D62E44EF082A0DE6763 /* TelegramAppKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F16FB08852FB478A3441E869 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BC93EC70A59F69220DF736B /* Pods-TelegramAppKit_Example */,
+				61A3F80C5B0510E1BAD0468B /* Pods-TelegramAppKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F3F11A7D2E71A7F346923D1F = {
+			isa = PBXGroup;
+			children = (
+				A472F1B9694F167BA2DAA584 /* Podfile */,
+				A10F80E3A2B22D462763FA0F /* Development Pods */,
+				112F46D05BDAEB3D91662446 /* Frameworks */,
+				681DECE904D6D26C456FD3D8 /* Pods */,
+				E6BC6D74B7B4632627F62291 /* Products */,
+				F16FB08852FB478A3441E869 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F8BE428A0B954F4515AABCEA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DBEA99D17D54BCF23B5C8FB /* Info.plist */,
+				3D45D2F317CCF36978C7DBBA /* Pods-TelegramAppKit_Tests-Specta.modulemap */,
+				476C477AE78A2548F25791E9 /* Pods-TelegramAppKit_Tests-Specta.xcconfig */,
+				0D61AEE5211223500389DBCE /* Pods-TelegramAppKit_Tests-Specta-Private.xcconfig */,
+				2868F20BA1BBB8E0F3400EA5 /* Pods-TelegramAppKit_Tests-Specta-dummy.m */,
+				203D9947AF9E51241FEFAB86 /* Pods-TelegramAppKit_Tests-Specta-prefix.pch */,
+				8C17F1A798340EBD8C6EAD7A /* Pods-TelegramAppKit_Tests-Specta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-TelegramAppKit_Tests-Specta";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		356FA24E39A743A286833E93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA506B4CD716DEB4555FBAD6 /* Pods-TelegramAppKit_Tests-TelegramAppKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652495ECAF17EBA5EFBBA02B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BCE71AF51224DDB05EBB41 /* Pods-TelegramAppKit_Example-TelegramAppKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA886A9F1015892F7D10848 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ABBED2A82F24145F2BB94D /* Pods-TelegramAppKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7E9678E501EA28071FF7EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7937DED3F6144B0A81C29D /* Pods-TelegramAppKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A78B796F370FFC1B43DAA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0DEE00323A776531617AD8 /* Pods-TelegramAppKit_Tests-Specta-umbrella.h in Headers */,
+				D718BD690159BB4B727A74DE /* SPTCallSite.h in Headers */,
+				B1DEFE7272023045E7FC4D71 /* SPTCompiledExample.h in Headers */,
+				36F33A6A3253FFE39F61F88F /* SPTExample.h in Headers */,
+				3066C8506BD0B8E9DE81AD6D /* SPTExampleGroup.h in Headers */,
+				3B2203E5355607FE5523996B /* SPTExcludeGlobalBeforeAfterEach.h in Headers */,
+				EF0EA6D0ACB2FCFF9F182DA3 /* SPTGlobalBeforeAfterEach.h in Headers */,
+				9C73CC5BE9158FA88F086974 /* SPTSharedExampleGroups.h in Headers */,
+				662A7995661F6D6EC093B4A5 /* SPTSpec.h in Headers */,
+				9575B84E431C8F9007D8B501 /* SPTTestSuite.h in Headers */,
+				1BD931E2C588322E84717C4C /* Specta.h in Headers */,
+				3F7611A5BBDED88B57AB4360 /* SpectaDSL.h in Headers */,
+				6786053EC612B776939522C6 /* SpectaTypes.h in Headers */,
+				38FF13A490EC8A64CC549BF8 /* SpectaUtility.h in Headers */,
+				C05DA21E46DD780AEA9EE69A /* XCTest+Private.h in Headers */,
+				292FEA5DFDA06CB12C23986D /* XCTestCase+Specta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9C93B60983DD3E16F51A53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5292E662FD79459640B4B7F6 /* EXPBlockDefinedMatcher.h in Headers */,
+				7D8F49D2752FAEC36954C59E /* EXPDefines.h in Headers */,
+				702DA9DF612C9DE793BEB254 /* EXPDoubleTuple.h in Headers */,
+				ABEF136F437292173941F06E /* EXPExpect.h in Headers */,
+				90131ED03CE8D1AE096DD4B4 /* EXPFloatTuple.h in Headers */,
+				22468478893D509B81AC48EB /* EXPMatcher.h in Headers */,
+				E1B500D1D433A4D948BADD2B /* EXPMatcherHelpers.h in Headers */,
+				B4A22DF77E1C9B0C36FEDF5E /* EXPMatchers+beCloseTo.h in Headers */,
+				3DCF23EDBF503DAA0D863A60 /* EXPMatchers+beFalsy.h in Headers */,
+				10EF337CC224424A58803419 /* EXPMatchers+beGreaterThan.h in Headers */,
+				A376C7DD8D4A36D83FF5E848 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
+				56EAC43DDE4D18EBBD407160 /* EXPMatchers+beIdenticalTo.h in Headers */,
+				ACDE2FD251A49A5925238401 /* EXPMatchers+beInTheRangeOf.h in Headers */,
+				92119592EB0DFDFAA5C62431 /* EXPMatchers+beInstanceOf.h in Headers */,
+				FD958B8D48255B5039434A54 /* EXPMatchers+beKindOf.h in Headers */,
+				54FAB5629D37053481FD487F /* EXPMatchers+beLessThan.h in Headers */,
+				9CF081F33BDA779F53F9045B /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
+				2D6DF2E443B07A4320E77B41 /* EXPMatchers+beNil.h in Headers */,
+				D902FDBE49D02B2C72128D2B /* EXPMatchers+beSubclassOf.h in Headers */,
+				50FEEEB965866360B76CD204 /* EXPMatchers+beSupersetOf.h in Headers */,
+				4A9AB5880EACE2B0BFD08581 /* EXPMatchers+beTruthy.h in Headers */,
+				64ED41D4CA0AA4C70EDC34A2 /* EXPMatchers+beginWith.h in Headers */,
+				6DBF6ED202EA69EC9CD725BF /* EXPMatchers+conformTo.h in Headers */,
+				0D786D060BD30094F54D6374 /* EXPMatchers+contain.h in Headers */,
+				81194975A414442209762C9F /* EXPMatchers+endWith.h in Headers */,
+				526D748D282688988A888E11 /* EXPMatchers+equal.h in Headers */,
+				1B198A54D69B7138E798A45E /* EXPMatchers+haveCountOf.h in Headers */,
+				0A1568026BEE7D11134C0D94 /* EXPMatchers+match.h in Headers */,
+				F8652B317FCC15D28D3E7460 /* EXPMatchers+postNotification.h in Headers */,
+				88D80D55BF7FF6C47463B6E7 /* EXPMatchers+raise.h in Headers */,
+				9F75E9CC9D6F8AA13DCC3DDC /* EXPMatchers+raiseWithReason.h in Headers */,
+				EE5164BEEA95587E03EA9997 /* EXPMatchers+respondTo.h in Headers */,
+				00F09DA760B5270559FF6581 /* EXPMatchers.h in Headers */,
+				210AA589169F93B9455D6A7A /* EXPUnsupportedObject.h in Headers */,
+				F349F08B05684133347C8F94 /* Expecta.h in Headers */,
+				3FD6C98212177E53B8E44A07 /* ExpectaObject.h in Headers */,
+				9858188A67CF723A3D45E91E /* ExpectaSupport.h in Headers */,
+				0BE6AC440A7F067D3BD3F486 /* NSObject+Expecta.h in Headers */,
+				4B7070CAA2630F9BAE6F9838 /* NSValue+Expecta.h in Headers */,
+				36A8AF33A4C87CD15051DCE1 /* Pods-TelegramAppKit_Tests-Expecta-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		201E3EED877AB5FD91F49E70 /* Pods-TelegramAppKit_Tests-TelegramAppKit-TelegramAppKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B5603F2B908CF75703D608 /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Tests-TelegramAppKit-TelegramAppKit" */;
+			buildPhases = (
+				DEAD69D8C6709D73D9F8A9DB /* Sources */,
+				293B6B7F82DE9ECE2E03474B /* Frameworks */,
+				9B6D8EDEF5E24EFFFA592C3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TelegramAppKit_Tests-TelegramAppKit-TelegramAppKit";
+			productName = "Pods-TelegramAppKit_Tests-TelegramAppKit-TelegramAppKit";
+			productReference = 0483A39DE4CA2FAE382C96B1 /* TelegramAppKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		55C093349D72FA0B3B1E0F7F /* Pods-TelegramAppKit_Tests-Specta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86DB7256E72AF9A37F131C84 /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Tests-Specta" */;
+			buildPhases = (
+				8E462CB3DFAE8AEF3CE7C6A5 /* Sources */,
+				F4F252C8F851D222ED42F895 /* Frameworks */,
+				C4A78B796F370FFC1B43DAA0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TelegramAppKit_Tests-Specta";
+			productName = "Pods-TelegramAppKit_Tests-Specta";
+			productReference = AD75B9D5DA809AA91435F807 /* Specta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		731F5C1A874486EAB34BE128 /* Pods-TelegramAppKit_Tests-TelegramAppKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEDC91942616A7220607DFF5 /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Tests-TelegramAppKit" */;
+			buildPhases = (
+				29432A4C570D9095F2DE3D2E /* Sources */,
+				96AEF3C212CB76289D048141 /* Frameworks */,
+				EE12C5BB7166C0ABE2FAC149 /* Resources */,
+				356FA24E39A743A286833E93 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FE16C4DAC61CEA9EAB22166 /* PBXTargetDependency */,
+			);
+			name = "Pods-TelegramAppKit_Tests-TelegramAppKit";
+			productName = "Pods-TelegramAppKit_Tests-TelegramAppKit";
+			productReference = 80C2AC40F4081751C353092A /* TelegramAppKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8667E1279E0025E443F44EB3 /* Pods-TelegramAppKit_Example-TelegramAppKit-TelegramAppKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59B1412A6638C734FE4A698E /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Example-TelegramAppKit-TelegramAppKit" */;
+			buildPhases = (
+				2AE1A0E79C37E19B68594982 /* Sources */,
+				6060D164845813D12A16988C /* Frameworks */,
+				920437B14D4C8D6D908509CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TelegramAppKit_Example-TelegramAppKit-TelegramAppKit";
+			productName = "Pods-TelegramAppKit_Example-TelegramAppKit-TelegramAppKit";
+			productReference = C436761A7077C8497D55CBF2 /* TelegramAppKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B4218A4AC011C14771ECC5B1 /* Pods-TelegramAppKit_Tests-Expecta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F0C6C50E27E849265B32F11 /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Tests-Expecta" */;
+			buildPhases = (
+				873BCA36771EC9164A08FA2B /* Sources */,
+				8142C93C72501F441FFA2E5D /* Frameworks */,
+				DC9C93B60983DD3E16F51A53 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TelegramAppKit_Tests-Expecta";
+			productName = "Pods-TelegramAppKit_Tests-Expecta";
+			productReference = 09EBE6C379E2011AE4E1EAE9 /* Expecta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B959027466711B4CE37DE10A /* Pods-TelegramAppKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 990385737DA51CB73BFE09EB /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Tests" */;
+			buildPhases = (
+				80F94482812C153440C2040F /* Sources */,
+				E1E173FDBC2AEA76EB2341AD /* Frameworks */,
+				6DA886A9F1015892F7D10848 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A61B17277DAF0C45927E8F5 /* PBXTargetDependency */,
+				2A7BEED5A9147509EEF2219E /* PBXTargetDependency */,
+				A33CEE5057F221AC2652914F /* PBXTargetDependency */,
+			);
+			name = "Pods-TelegramAppKit_Tests";
+			productName = "Pods-TelegramAppKit_Tests";
+			productReference = FA3258237173602623F487E8 /* Pods_TelegramAppKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1F0BBC2ADA2F419491D7D16 /* Pods-TelegramAppKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7BDB531D21A634AF98D818F /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Example" */;
+			buildPhases = (
+				8A6DE706E44DEF95FFB424DA /* Sources */,
+				D54A964FCA057F5B015DF22F /* Frameworks */,
+				BC7E9678E501EA28071FF7EC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B772B323E54CCCBDF586FFE3 /* PBXTargetDependency */,
+			);
+			name = "Pods-TelegramAppKit_Example";
+			productName = "Pods-TelegramAppKit_Example";
+			productReference = ACDF7A3C3069E676EAEEC01A /* Pods_TelegramAppKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA81242A8958413D8390F0E3 /* Pods-TelegramAppKit_Example-TelegramAppKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681B6503CAC2670EFAB9A4DD /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Example-TelegramAppKit" */;
+			buildPhases = (
+				F0E99ED76A3ECE850CC24E40 /* Sources */,
+				DEF19BF76C16B3497DB601BC /* Frameworks */,
+				1297552AEBE47E760B24DDF7 /* Resources */,
+				652495ECAF17EBA5EFBBA02B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				665056E8BEA8218500AFACAF /* PBXTargetDependency */,
+			);
+			name = "Pods-TelegramAppKit_Example-TelegramAppKit";
+			productName = "Pods-TelegramAppKit_Example-TelegramAppKit";
+			productReference = EE899D62E44EF082A0DE6763 /* TelegramAppKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		818A1116AAF8EA134150BA3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 05E259729A1BADBF26AE0D7C /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3F11A7D2E71A7F346923D1F;
+			productRefGroup = E6BC6D74B7B4632627F62291 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1F0BBC2ADA2F419491D7D16 /* Pods-TelegramAppKit_Example */,
+				CA81242A8958413D8390F0E3 /* Pods-TelegramAppKit_Example-TelegramAppKit */,
+				8667E1279E0025E443F44EB3 /* Pods-TelegramAppKit_Example-TelegramAppKit-TelegramAppKit */,
+				B959027466711B4CE37DE10A /* Pods-TelegramAppKit_Tests */,
+				B4218A4AC011C14771ECC5B1 /* Pods-TelegramAppKit_Tests-Expecta */,
+				55C093349D72FA0B3B1E0F7F /* Pods-TelegramAppKit_Tests-Specta */,
+				731F5C1A874486EAB34BE128 /* Pods-TelegramAppKit_Tests-TelegramAppKit */,
+				201E3EED877AB5FD91F49E70 /* Pods-TelegramAppKit_Tests-TelegramAppKit-TelegramAppKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1297552AEBE47E760B24DDF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B94C45EC072F0DD2396F636 /* TelegramAppKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		920437B14D4C8D6D908509CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D8EDEF5E24EFFFA592C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE12C5BB7166C0ABE2FAC149 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB6ABB0A7DF382CA348C112 /* TelegramAppKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29432A4C570D9095F2DE3D2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1520657EE19F7223A3CBD0C /* Pods-TelegramAppKit_Tests-TelegramAppKit-dummy.m in Sources */,
+				921A669D2E50937AE98774EB /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE1A0E79C37E19B68594982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F94482812C153440C2040F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822080A18919A3B727CCEE12 /* Pods-TelegramAppKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		873BCA36771EC9164A08FA2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2143AA3C0FFB74B72334AEDE /* EXPBlockDefinedMatcher.m in Sources */,
+				4FB9F3D8B0532D05909B2821 /* EXPDoubleTuple.m in Sources */,
+				484BC971826CBB4D3BF2FF38 /* EXPExpect.m in Sources */,
+				F162B9F3A9B0C995234FE901 /* EXPFloatTuple.m in Sources */,
+				4D12804F0209F48291B300FF /* EXPMatcherHelpers.m in Sources */,
+				685EF8018C18515AA085C726 /* EXPMatchers+beCloseTo.m in Sources */,
+				7D3130B8AD0DB530D1A20694 /* EXPMatchers+beFalsy.m in Sources */,
+				3843B92A70910CDD678635D2 /* EXPMatchers+beGreaterThan.m in Sources */,
+				58DB31012ED01DFFC665629E /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
+				B631A6C4BE9AEE2F740CAAE5 /* EXPMatchers+beIdenticalTo.m in Sources */,
+				67845321B626FAF867B00837 /* EXPMatchers+beInTheRangeOf.m in Sources */,
+				1CF7DEEDF95115F3CC4D5B95 /* EXPMatchers+beInstanceOf.m in Sources */,
+				CCAFFB011C38049124FD4C58 /* EXPMatchers+beKindOf.m in Sources */,
+				F93BE954585685F93D342BE3 /* EXPMatchers+beLessThan.m in Sources */,
+				B8BD2355DD392DD4689F03DF /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
+				DE3941C5A7C16DA7A4DBB3C8 /* EXPMatchers+beNil.m in Sources */,
+				BBC1BCD6E1F49D5CF7E6D610 /* EXPMatchers+beSubclassOf.m in Sources */,
+				8CBF0B34EC7F7891360A1BC0 /* EXPMatchers+beSupersetOf.m in Sources */,
+				4F50C7D5865253ED523C1A62 /* EXPMatchers+beTruthy.m in Sources */,
+				AB4026E97ACE69D640BCFE32 /* EXPMatchers+beginWith.m in Sources */,
+				FE127ECAA153CF5536B22CCC /* EXPMatchers+conformTo.m in Sources */,
+				1E30DAA28FC609DE3A84B8B1 /* EXPMatchers+contain.m in Sources */,
+				75C5403F8E0731A3261FD962 /* EXPMatchers+endWith.m in Sources */,
+				B8FCCEEB8B278AF90C97ECE6 /* EXPMatchers+equal.m in Sources */,
+				E35BA2DC5E5DABF7BA4EF851 /* EXPMatchers+haveCountOf.m in Sources */,
+				32E704F81083B797E40F29EA /* EXPMatchers+match.m in Sources */,
+				75EFEEEE5ECEB3379D6FC847 /* EXPMatchers+postNotification.m in Sources */,
+				514DF86D96A096CCDB5EA353 /* EXPMatchers+raise.m in Sources */,
+				B3F368D90BB35C3FEEF3691B /* EXPMatchers+raiseWithReason.m in Sources */,
+				5B89782110771E517FED978F /* EXPMatchers+respondTo.m in Sources */,
+				13949B9AE8584AF6D04A2775 /* EXPUnsupportedObject.m in Sources */,
+				C6BDA8F0D3379CA06C215224 /* ExpectaObject.m in Sources */,
+				68A64FBDD171B150DB2224F8 /* ExpectaSupport.m in Sources */,
+				D7C4B5D873A4B05865802A53 /* NSValue+Expecta.m in Sources */,
+				CC42B4A569288615EFDD037B /* Pods-TelegramAppKit_Tests-Expecta-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A6DE706E44DEF95FFB424DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D711A8F968B4A1371F820E /* Pods-TelegramAppKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E462CB3DFAE8AEF3CE7C6A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07D57285E127943C5479B9B /* Pods-TelegramAppKit_Tests-Specta-dummy.m in Sources */,
+				B95648CFF6BCC5B986D176CB /* SPTCallSite.m in Sources */,
+				A447E68F91E8E7BB8FFA4CE0 /* SPTCompiledExample.m in Sources */,
+				3BF0809C9B83D1913141A5BD /* SPTExample.m in Sources */,
+				ACAB62E2881762EC0EA6F0B1 /* SPTExampleGroup.m in Sources */,
+				42835855D9B65DF16725566F /* SPTSharedExampleGroups.m in Sources */,
+				649DA1ACA9D03EC48DF02DB7 /* SPTSpec.m in Sources */,
+				FDF0E70DD186373E769A5B6C /* SPTTestSuite.m in Sources */,
+				8681740A1EBA1225495C501A /* SpectaDSL.m in Sources */,
+				DF745890C64E5AC32674DA1A /* SpectaUtility.m in Sources */,
+				FBF91806431F2F90608C4F64 /* XCTestCase+Specta.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAD69D8C6709D73D9F8A9DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E99ED76A3ECE850CC24E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF99F03FA207006BD5D61799 /* Pods-TelegramAppKit_Example-TelegramAppKit-dummy.m in Sources */,
+				5754B8DD9A552C44FF11E25D /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A7BEED5A9147509EEF2219E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TelegramAppKit_Tests-Specta";
+			target = 55C093349D72FA0B3B1E0F7F /* Pods-TelegramAppKit_Tests-Specta */;
+			targetProxy = 889B9A4BF66443E9F67C1C1A /* PBXContainerItemProxy */;
+		};
+		3A61B17277DAF0C45927E8F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TelegramAppKit_Tests-Expecta";
+			target = B4218A4AC011C14771ECC5B1 /* Pods-TelegramAppKit_Tests-Expecta */;
+			targetProxy = 0F574A398035A2A81A94286F /* PBXContainerItemProxy */;
+		};
+		4FE16C4DAC61CEA9EAB22166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TelegramAppKit_Tests-TelegramAppKit-TelegramAppKit";
+			target = 201E3EED877AB5FD91F49E70 /* Pods-TelegramAppKit_Tests-TelegramAppKit-TelegramAppKit */;
+			targetProxy = C5E0C1E774E76870870711B4 /* PBXContainerItemProxy */;
+		};
+		665056E8BEA8218500AFACAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TelegramAppKit_Example-TelegramAppKit-TelegramAppKit";
+			target = 8667E1279E0025E443F44EB3 /* Pods-TelegramAppKit_Example-TelegramAppKit-TelegramAppKit */;
+			targetProxy = 078384729D71BEA642D021B9 /* PBXContainerItemProxy */;
+		};
+		A33CEE5057F221AC2652914F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TelegramAppKit_Tests-TelegramAppKit";
+			target = 731F5C1A874486EAB34BE128 /* Pods-TelegramAppKit_Tests-TelegramAppKit */;
+			targetProxy = D84B2FE7A743385892028AC1 /* PBXContainerItemProxy */;
+		};
+		B772B323E54CCCBDF586FFE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TelegramAppKit_Example-TelegramAppKit";
+			target = CA81242A8958413D8390F0E3 /* Pods-TelegramAppKit_Example-TelegramAppKit */;
+			targetProxy = 6B477C68AEE5244E6B0BC774 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13498B5FEABD78C8D4D562D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A82EB1E80B4CC6D6439DF3 /* Pods-TelegramAppKit_Tests-TelegramAppKit-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-TelegramAppKit_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = TelegramAppKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1C508BD985883F11F09581CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A82EB1E80B4CC6D6439DF3 /* Pods-TelegramAppKit_Tests-TelegramAppKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TelegramAppKit_Tests-TelegramAppKit/Pods-TelegramAppKit_Tests-TelegramAppKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-TelegramAppKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-TelegramAppKit/Pods-TelegramAppKit_Tests-TelegramAppKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TelegramAppKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		368E1E872612F8D86B7DF1DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E8A0ACB8BD0A3D2B187A95 /* Pods-TelegramAppKit_Example-TelegramAppKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TelegramAppKit_Example-TelegramAppKit/Pods-TelegramAppKit_Example-TelegramAppKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Example-TelegramAppKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Example-TelegramAppKit/Pods-TelegramAppKit_Example-TelegramAppKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TelegramAppKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D96B6CB7D8442CCEB54A41B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC78D5EACC8843B0E8F1DDF1 /* Pods-TelegramAppKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Tests/Pods-TelegramAppKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_TelegramAppKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56F2073D63F26779EB5FF95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A82EB1E80B4CC6D6439DF3 /* Pods-TelegramAppKit_Tests-TelegramAppKit-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-TelegramAppKit_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = TelegramAppKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5AEC10F7C2E26D2C26F88688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC753D54AF3E2ED07596F2D8 /* Pods-TelegramAppKit_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TelegramAppKit_Tests-Expecta/Pods-TelegramAppKit_Tests-Expecta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-Expecta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-Expecta/Pods-TelegramAppKit_Tests-Expecta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Expecta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A583A418872A8CBA0DB68E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		793A400B7D8BCCFAAE5CF5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		83EA26C8E9F816A484A1FE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E8A0ACB8BD0A3D2B187A95 /* Pods-TelegramAppKit_Example-TelegramAppKit-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-TelegramAppKit_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = TelegramAppKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8C1EE1D522909BF458FB4763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D61AEE5211223500389DBCE /* Pods-TelegramAppKit_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TelegramAppKit_Tests-Specta/Pods-TelegramAppKit_Tests-Specta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-Specta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-Specta/Pods-TelegramAppKit_Tests-Specta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Specta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADA96FF1CDA01AE34E08BABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C334B092CA53254B9911D33 /* Pods-TelegramAppKit_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Example/Pods-TelegramAppKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_TelegramAppKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B733E6B7B0DFDAD6211AFD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC580D74C2B687A475DA49C /* Pods-TelegramAppKit_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Tests/Pods-TelegramAppKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_TelegramAppKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BCE6166FCD5378BB89483EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A82EB1E80B4CC6D6439DF3 /* Pods-TelegramAppKit_Tests-TelegramAppKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TelegramAppKit_Tests-TelegramAppKit/Pods-TelegramAppKit_Tests-TelegramAppKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-TelegramAppKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-TelegramAppKit/Pods-TelegramAppKit_Tests-TelegramAppKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TelegramAppKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD086EE1B606DB123FA98107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E8A0ACB8BD0A3D2B187A95 /* Pods-TelegramAppKit_Example-TelegramAppKit-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-TelegramAppKit_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = TelegramAppKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C960225BCD5714516BA7B861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D61AEE5211223500389DBCE /* Pods-TelegramAppKit_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TelegramAppKit_Tests-Specta/Pods-TelegramAppKit_Tests-Specta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-Specta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-Specta/Pods-TelegramAppKit_Tests-Specta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Specta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D337153680160E8A75368D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC753D54AF3E2ED07596F2D8 /* Pods-TelegramAppKit_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TelegramAppKit_Tests-Expecta/Pods-TelegramAppKit_Tests-Expecta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-Expecta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Tests-Expecta/Pods-TelegramAppKit_Tests-Expecta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Expecta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E59C814EA8681921F47B1150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 828AA978D3ED9E42D88EA1FB /* Pods-TelegramAppKit_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Example/Pods-TelegramAppKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_TelegramAppKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F28F726C63BD96FB0866A6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E8A0ACB8BD0A3D2B187A95 /* Pods-TelegramAppKit_Example-TelegramAppKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TelegramAppKit_Example-TelegramAppKit/Pods-TelegramAppKit_Example-TelegramAppKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelegramAppKit_Example-TelegramAppKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TelegramAppKit_Example-TelegramAppKit/Pods-TelegramAppKit_Example-TelegramAppKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TelegramAppKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05E259729A1BADBF26AE0D7C /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793A400B7D8BCCFAAE5CF5D6 /* Debug */,
+				6A583A418872A8CBA0DB68E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59B1412A6638C734FE4A698E /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Example-TelegramAppKit-TelegramAppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD086EE1B606DB123FA98107 /* Debug */,
+				83EA26C8E9F816A484A1FE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681B6503CAC2670EFAB9A4DD /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Example-TelegramAppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28F726C63BD96FB0866A6CC /* Debug */,
+				368E1E872612F8D86B7DF1DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86DB7256E72AF9A37F131C84 /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Tests-Specta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C1EE1D522909BF458FB4763 /* Debug */,
+				C960225BCD5714516BA7B861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87B5603F2B908CF75703D608 /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Tests-TelegramAppKit-TelegramAppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56F2073D63F26779EB5FF95E /* Debug */,
+				13498B5FEABD78C8D4D562D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		990385737DA51CB73BFE09EB /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D96B6CB7D8442CCEB54A41B /* Debug */,
+				B733E6B7B0DFDAD6211AFD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F0C6C50E27E849265B32F11 /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Tests-Expecta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AEC10F7C2E26D2C26F88688 /* Debug */,
+				D337153680160E8A75368D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7BDB531D21A634AF98D818F /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59C814EA8681921F47B1150 /* Debug */,
+				ADA96FF1CDA01AE34E08BABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEDC91942616A7220607DFF5 /* Build configuration list for PBXNativeTarget "Pods-TelegramAppKit_Tests-TelegramAppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE6166FCD5378BB89483EA2 /* Debug */,
+				1C508BD985883F11F09581CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 818A1116AAF8EA134150BA3F /* Project object */;
+}
